@@ -1,0 +1,17 @@
+// Import all the varablies to use, plus some settings for foudantion grid
+@import "global/settings";
+
+// Import foundation.scss from vendor files
+@import "../../node_modules/foundation-sites/scss/foundation";
+
+//flex grid
+@include foundation-xy-grid-classes;
+//flex utilities
+@include foundation-flex-classes;
+
+//custom fonts to use
+@import "fonts/primary";
+@import "fonts/secondary";
+
+//some base styles
+@import "global/base";

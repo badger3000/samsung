@@ -20,7 +20,7 @@ function samsungnxt_start() {
     // cleaning up excerpt
     add_filter('excerpt_more', 'samsungnxt_excerpt_more');
 
-} /* end joints start */
+} /* end SamsungNXT start */
 
 //The default wordpress head is a mess. Let's clean it up by removing all the junk we don't need.
 function samsungnxt_head_cleanup() {
@@ -41,8 +41,9 @@ function samsungnxt_head_cleanup() {
 	// Remove links for adjacent posts
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 	// Remove WP version
-	remove_action( 'wp_head', 'wp_generator' );
-} /* end Joints head cleanup */
+  remove_action( 'wp_head', 'wp_generator' );
+  
+} /* end SamsungNXT head cleanup */
 
 // Remove injected CSS for recent comments widget
 function samsungnxt_remove_wp_widget_recent_comments_style() {

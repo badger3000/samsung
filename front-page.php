@@ -1,21 +1,4 @@
-<!DOCTYPE HTML>
-
-<html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Your Website</title>
-</head>
-
-<body>
-
-  <header>
-    <nav>
-      <ul>
-        <li>This is my first menu item</li>
-      </ul>
-    </nav>
-  </header>
+<?php get_header();?>
 
   <section>
 
@@ -37,15 +20,5 @@
 
   </section>
 
-  <aside>
-    <h2>About section</h2>
-    <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-  </aside>
-
-  <footer>
-    <p>Copyright 2009 Your name</p>
-  </footer>
-
-</body>
-
-</html>
+  
+<?php get_footer(); ?>

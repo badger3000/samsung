@@ -7,13 +7,10 @@
   <?php wp_head(); ?>
   <title>Your Website</title>
 </head>
-<body >
+<body <?php body_class('samsungnxt'); ?>>
+<div class="grid-container full">
 
   <header>
-    <nav>
-      <ul>
-        <li>This is my first menu item</li>
-      </ul>
-    </nav>
+    <h1>Here from our customers<span>Our customers love charmer, we have nothing to hide</span></h1>
   </header>
 
