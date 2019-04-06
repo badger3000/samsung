@@ -1,0 +1,72 @@
+.samsungnxt {
+	.customer {
+    margin-bottom: 81px;
+		@include breakpoint(large) {
+			margin-bottom: 125px;
+		}
+
+		.grid-container {
+      padding: 0;
+      margin: 0 30px;
+			background: $white;
+      box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.08);
+      @include breakpoint(large){
+        margin-left: auto;
+        margin-right: auto;
+      }
+		}
+
+		&__image {
+			width: 100%;
+			height: 357px;
+			background-size: cover;
+      background-position: center center;
+      margin-bottom: 42px;
+      @include breakpoint(large){
+        width: 450px;
+        height: 520px;
+        margin-bottom: 0;
+      }
+		}
+
+		&__text {
+      padding: 0 30px;
+      @include breakpoint(large){
+        padding: 50px 96px 0 69px;
+        
+      }
+			&--blockquote {
+				font-size: 18px;
+        line-height: 1.72;
+				@include breakpoint(large) {
+          font-size: 25px;
+          line-height: 1.6;
+				}
+				&::before {
+					content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MSIgaGVpZ2h0PSI1MyIgdmlld0JveD0iMCAwIDYxIDUzIj4gICAgPHBhdGggZmlsbD0iI0VDRUVGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTEuNjQgMEM4LjQxMiAwIDUuNjY1IDEuMTcyIDMuMzk5IDMuNTE2IDEuMTMzIDUuODU5IDAgOC42OTggMCAxMi4wM2MwIDMuMzM0IDEuMTMzIDYuMTcyIDMuMzk4IDguNTE2IDIuMjY2IDIuMzQ0IDUuMDEzIDMuNTE1IDguMjQzIDMuNTE1IDIuOTE2IDAgNC42NzQgMS4xOTggNS4yNzMgMy41OTQuNTk5IDIuMzk2LjMgNS4wNTItLjg5OCA3Ljk2OS0xLjE5OCAyLjkxNy0zLjIwMyA1LjU3My02LjAxNiA3Ljk2OXMtNi4xNDYgMy41OTMtMTAgMy41OTN2NS42MjZjNi45MjcgMCAxMi42OTUtMi43NDggMTcuMzA1LTguMjQzIDQuNjEtNS40OTUgNy42MTctMTEuNTM2IDkuMDIzLTE4LjEyNSAxLjQwNi02LjU4OCAxLjAwMy0xMi42NDMtMS4yMS0xOC4xNjRDMjIuOTAzIDIuNzYxIDE4LjQxIDAgMTEuNjQgMHptMzMuNTk0IDBjLTMuMjI5IDAtNS45NzYgMS4xNzItOC4yNDIgMy41MTYtMi4yNjUgMi4zNDMtMy4zOTggNS4xODItMy4zOTggOC41MTUgMCAzLjMzNCAxLjEzMyA2LjE3MiAzLjM5OCA4LjUxNiAyLjI2NiAyLjM0NCA1LjAxMyAzLjUxNSA4LjI0MiAzLjUxNSAyLjkxNyAwIDQuNjg4IDEuMTk4IDUuMzEzIDMuNTk0cy4zMjUgNS4wNTItLjg5OSA3Ljk2OWMtMS4yMjQgMi45MTctMy4yMjkgNS41NzMtNi4wMTUgNy45NjktMi43ODcgMi4zOTYtNi4xMzMgMy41OTMtMTAuMDQgMy41OTN2NS42MjZjNi45MjggMCAxMi42OTYtMi43NDggMTcuMzA1LTguMjQzIDQuNjEtNS40OTUgNy42MTgtMTEuNTM2IDkuMDI0LTE4LjEyNSAxLjQwNi02LjU4OCAxLjAwMi0xMi42NDMtMS4yMTEtMTguMTY0QzU2LjQ5NyAyLjc2MSA1Mi4wMDUgMCA0NS4yMzQgMHoiLz48L3N2Zz4=");
+					display: block;
+          text-align: left;
+          margin-bottom:42px;
+          @include breakpoint(large){
+            margin-bottom:30px; 
+          }
+        }
+        .text {
+          margin-bottom: 50px;
+          @include breakpoint(large){
+            margin-bottom: 127px;
+          }
+        }
+      }
+      .name {
+        font-family: $primary-font;
+        text-transform: uppercase;
+        color: $samsungnxt-blue-dark2;
+        margin-bottom: 50px;
+        @include breakpoint(large){
+          margin-bottom: 0;
+        }
+      }
+		}
+	}
+}

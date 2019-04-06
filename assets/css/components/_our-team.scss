@@ -2,8 +2,10 @@
 	.ourTeam {
     background: $samsungnxt-blue-light;
     padding:38px 0 51px 30px;
+    margin-bottom: 30px;
     @include breakpoint(large){
       padding: 135px 0;
+      margin-bottom: 100px;
     }
 		
 
