@@ -1,0 +1,18 @@
+//namespae of the theme
+.samsungnxt{
+  .feedback {
+    &__header{
+      margin-bottom: rem-calc(130);
+    }
+    &__quote {
+     margin-bottom: rem-calc(145);
+      img {
+        max-width: rem-calc(410);
+        height: auto;
+      }
+      .large-order-2 {
+        text-align: right;
+      }
+    }
+  }
+}

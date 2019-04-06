@@ -7,6 +7,14 @@ body {
     h1,
     h2 {
       font-family: $primary-font;
+      color: $samsungnxt-gray;
+    }
+    h1{
+      font-size: rem-calc(80);
+      font-weight: 900;
+    }
+    h2 {
+      font-size: rem-calc(24);
     }
 	}
 }

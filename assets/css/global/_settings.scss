@@ -1,15 +1,20 @@
 
+
 @import '../../../node_modules/foundation-sites/scss/util/util';
 
 // 1. Global
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1440);
+$global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-//colors
+
+//base colors
 $black: #0a0a0a;
 $white: #fefefe;
+
+$samsungnxt-gray: #373742;
+
 //custom fonts
 $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'PT Serif', serif;
