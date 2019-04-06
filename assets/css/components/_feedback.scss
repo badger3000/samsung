@@ -2,30 +2,44 @@
 .samsungnxt {
 	.feedback {
 		&__header {
-			margin-bottom: rem-calc(123);
-
+      margin-bottom: rem-calc(79);
+      @include breakpoint(large){
+        margin-bottom: rem-calc(123);
+      }
+		
 			.sub-header {
-				font-size: rem-calc(23);
-				color: $samsungnxt-gray;
+				font-size: rem-calc(18);
+        color: $samsungnxt-gray;
+        @include breakpoint(large){
+          font-size: rem-calc(23);
+        }
+      
 			}
 		}
 
 		&__quote {
 			margin-bottom: rem-calc(136);
 
-			p {
-        margin-bottom: rem-calc(63);
-				font-size: rem-calc(25);
-				line-height: 1.67;
+			.text {
+				margin-bottom: rem-calc(34);
+				font-size: rem-calc(18);
+        line-height: 1.72;
+        @include breakpoint(large){
+          margin-bottom: rem-calc(63);
+          font-size: rem-calc(25);
+          line-height: 1.67;
+        }
 			}
 
 			span {
 				font-family: $primary-font;
 				display: block;
 				font-size: rem-calc(18);
-        &.name {
-          margin-bottom: rem-calc(9);
-        }
+
+				&.name {
+					margin-bottom: rem-calc(9);
+				}
+
 				&.title {
 					font-size: rem-calc(20);
 					color: $samsungnxt-gray2;
@@ -34,21 +48,29 @@
 
 			//I dont like targeting framework classes, but this is a quick hit to right align image
 			.large-order-2 {
-				display: flex;
-				justify-content: flex-end;
+        @include breakpoint(large){
+          display: flex;
+				  justify-content: flex-end;
+        }
 			}
 		}
 
 		&__image {
-			img {
-				border-radius: 20px;
-				max-width: rem-calc(410);
-				height: auto;
-			}
-
-			position: relative;
-			width: 410px;
-			height: 300px;
+      position: relative;
+      width: 286px;
+      height: 210px;
+      background-size:contain;
+      background-position: center;
+			border-radius: 20px;
+     
+      @include breakpoint(medium down){
+        margin-bottom: 37px;
+      }
+      @include breakpoint(large){
+        width: 410px;
+        height: 300px;
+      }
+		
 
 			&::after {
 				position: absolute;
@@ -56,18 +78,29 @@
 				top: 10%;
 				right: -10%;
 				content: '';
-				display: block;
-				width: 410px;
-				height: 300px;
+        display: block;
+        width: 286px;
+        height: 210px;
 				//background: rgba(150, 150, 150, 0.6);
 				background-image: radial-gradient(circle, black 50%, transparent 33%);
-				background-size: 10px 10px;
+        background-size: 10px 10px;
+        @include breakpoint(large){
+          width: 410px;
+          height: 300px;
+        }
 			}
+		}
+
+		&__button {
+			display: flex;
+			justify-content: center;
+			margin-bottom: rem-calc(92);
     }
-    &__button {
-      display: flex;
-      justify-content: center;
-      margin-bottom: rem-calc(92);
+    //overide the grid container for mobile, to give it extra padding
+    .grid-container {
+      @include breakpoint(medium down){
+        padding: 0 30px;
+      }
     }
 	}
 }

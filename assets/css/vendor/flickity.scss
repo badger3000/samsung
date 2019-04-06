@@ -12,6 +12,9 @@ https://flickity.metafizzy.co
   overflow: hidden;
   position: relative;
   height: 650px;
+  @include breakpoint(large){
+    margin-left:135px; 
+  }
 }
 
 .flickity-slider {

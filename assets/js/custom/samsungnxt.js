@@ -4,7 +4,7 @@ var elem = document.querySelector('.ourTeam__cards');
 //init carousel
 var flkty = new Flickity( elem, {
   // options
-  //cellAlign: 'left',
+  cellAlign: 'left',
   setGallerySize: false,
   prevNextButtons: false,
   pageDots: false,
