@@ -1,18 +1,73 @@
 //namespae of the theme
-.samsungnxt{
-  .feedback {
-    &__header{
-      margin-bottom: rem-calc(130);
+.samsungnxt {
+	.feedback {
+		&__header {
+			margin-bottom: rem-calc(123);
+
+			.sub-header {
+				font-size: rem-calc(23);
+				color: $samsungnxt-gray;
+			}
+		}
+
+		&__quote {
+			margin-bottom: rem-calc(136);
+
+			p {
+        margin-bottom: rem-calc(63);
+				font-size: rem-calc(25);
+				line-height: 1.67;
+			}
+
+			span {
+				font-family: $primary-font;
+				display: block;
+				font-size: rem-calc(18);
+        &.name {
+          margin-bottom: rem-calc(9);
+        }
+				&.title {
+					font-size: rem-calc(20);
+					color: $samsungnxt-gray2;
+				}
+			}
+
+			//I dont like targeting framework classes, but this is a quick hit to right align image
+			.large-order-2 {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+
+		&__image {
+			img {
+				border-radius: 20px;
+				max-width: rem-calc(410);
+				height: auto;
+			}
+
+			position: relative;
+			width: 410px;
+			height: 300px;
+
+			&::after {
+				position: absolute;
+				z-index: -1;
+				top: 10%;
+				right: -10%;
+				content: '';
+				display: block;
+				width: 410px;
+				height: 300px;
+				//background: rgba(150, 150, 150, 0.6);
+				background-image: radial-gradient(circle, black 50%, transparent 33%);
+				background-size: 10px 10px;
+			}
     }
-    &__quote {
-     margin-bottom: rem-calc(145);
-      img {
-        max-width: rem-calc(410);
-        height: auto;
-      }
-      .large-order-2 {
-        text-align: right;
-      }
+    &__button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: rem-calc(92);
     }
-  }
+	}
 }

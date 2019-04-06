@@ -1,5 +1,6 @@
+//this is a file with all ths site varablies
 
-
+//grab foundaiton utiliy styles from node_modules
 @import '../../../node_modules/foundation-sites/scss/util/util';
 
 // 1. Global
@@ -13,7 +14,11 @@ $global-lineheight: 1.5;
 $black: #0a0a0a;
 $white: #fefefe;
 
+//theme colors
 $samsungnxt-gray: #373742;
+$samsungnxt-gray2: #838383;
+$samsungnxt-blue-light: #f5f6ff;
+$samsungnxt-blue-dark: #5866c3;
 
 //custom fonts
 $primary-font: 'Roboto', sans-serif;
