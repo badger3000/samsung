@@ -16,7 +16,8 @@ body {
       font-weight: bold;
     }
     h2 {
-      font-size: rem-calc(24);
+      color: $samsungnxt-gray;
+      font-size: rem-calc(32);
     }
     .button {
       display: flex;
@@ -35,6 +36,9 @@ body {
         content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE5IDE3Ij4gICAgPHBhdGggZmlsbD0iIzU4NjZDMyIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTQuNzA4IDcuMjg3TDkuNzU0IDEuOTNhMS4xMzMgMS4xMzMgMCAwIDEgMS42Ni0xLjUzOGw2LjcxMyA3LjI1OGExLjEzMyAxLjEzMyAwIDAgMSAwIDEuNTM4bC02LjcxMyA3LjI1OGExLjEzIDEuMTMgMCAxIDEtMS42Ni0xLjUzOGw0Ljk1NC01LjM1N0gxLjI0NmExLjEzMiAxLjEzMiAwIDAgMSAwLTIuMjY0aDEzLjQ2MnoiLz48L3N2Zz4=");
         display:block;
         margin-left: rem-calc(24);
+      }
+      &:focus {
+        outline: none;
       }
       &:hover {
         cursor: pointer;

@@ -215,12 +215,33 @@
 @font-face{font-family:'PT Serif';font-style:normal;font-weight:400;src:local("PT Serif"),local("PTSerif-Regular"),url(https://fonts.gstatic.com/s/ptserif/v10/EJRVQgYoZZY2vCFuvAFSzr-_dSb_nco.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 @font-face{font-family:'PT Serif';font-style:normal;font-weight:400;src:local("PT Serif"),local("PTSerif-Regular"),url(https://fonts.gstatic.com/s/ptserif/v10/EJRVQgYoZZY2vCFuvAFYzr-_dSb_nco.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'PT Serif';font-style:normal;font-weight:400;src:local("PT Serif"),local("PTSerif-Regular"),url(https://fonts.gstatic.com/s/ptserif/v10/EJRVQgYoZZY2vCFuvAFWzr-_dSb_.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/*! Flickity v2.2.0
+https://flickity.metafizzy.co
+---------------------------------------------- */.flickity-enabled{position:relative}
+.flickity-enabled:focus{outline:0}
+.flickity-viewport{overflow:hidden;position:relative;height:650px}
+.flickity-slider{position:absolute;width:100%;height:100%}
+.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.flickity-enabled.is-draggable .flickity-viewport{cursor:move;cursor:-webkit-grab;cursor:grab}
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down{cursor:-webkit-grabbing;cursor:grabbing}
+.flickity-button{background:transparent;border:0;color:#333}
+.flickity-button:hover{background:transparent;cursor:pointer}
+.flickity-button:focus{outline:0}
+.flickity-button:active{opacity:.6}
+.flickity-button:disabled{opacity:.3;cursor:auto;pointer-events:none}
+.flickity-button-icon{fill:currentColor}
+.flickity-prev-next-button .flickity-button-icon{width:19px;height:37px}
+.flickity-page-dots{position:absolute;width:100%;bottom:-25px;padding:0;margin:0;list-style:none;text-align:center;line-height:1}
+.flickity-rtl .flickity-page-dots{direction:rtl}
+.flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}
+.flickity-page-dots .dot.is-selected{opacity:1}
 body.samsungnxt{font-family:"PT Serif",serif;margin:12.5rem 0 0 0;padding:0;color:#373742}
 body.samsungnxt h1,body.samsungnxt h2{font-family:"Roboto",sans-serif;color:#373742}
 body.samsungnxt h1{margin:0 0 3.125rem 0;font-size:5.625rem;font-weight:bold}
-body.samsungnxt h2{font-size:1.5rem}
+body.samsungnxt h2{color:#373742;font-size:2rem}
 body.samsungnxt .button{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border-radius:10px;color:#5866c3;min-width:20.3125rem;border:0;background:#f5f6ff;font-size:1.375rem;padding:1.5625rem 2.1875rem;-webkit-transition:all 2ms ease-out;transition:all 2ms ease-out;font-weight:bold}
 body.samsungnxt .button:after{content:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE5IDE3Ij4gICAgPHBhdGggZmlsbD0iIzU4NjZDMyIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTQuNzA4IDcuMjg3TDkuNzU0IDEuOTNhMS4xMzMgMS4xMzMgMCAwIDEgMS42Ni0xLjUzOGw2LjcxMyA3LjI1OGExLjEzMyAxLjEzMyAwIDAgMSAwIDEuNTM4bC02LjcxMyA3LjI1OGExLjEzIDEuMTMgMCAxIDEtMS42Ni0xLjUzOGw0Ljk1NC01LjM1N0gxLjI0NmExLjEzMiAxLjEzMiAwIDAgMSAwLTIuMjY0aDEzLjQ2MnoiLz48L3N2Zz4=");display:block;margin-left:1.5rem}
+body.samsungnxt .button:focus{outline:0}
 body.samsungnxt .button:hover{cursor:pointer;background:#c2c8ff}
 .samsungnxt .feedback__header{margin-bottom:7.6875rem}
 .samsungnxt .feedback__header .sub-header{font-size:1.4375rem;color:#373742}
@@ -234,6 +255,16 @@ body.samsungnxt .button:hover{cursor:pointer;background:#c2c8ff}
 .samsungnxt .feedback__image img{border-radius:20px;max-width:25.625rem;height:auto}
 .samsungnxt .feedback__image::after{position:absolute;z-index:-1;top:10%;right:-10%;content:'';display:block;width:410px;height:300px;background-image:radial-gradient(circle,black 50%,transparent 33%);background-size:10px 10px}
 .samsungnxt .feedback__button{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-bottom:5.75rem}
+.samsungnxt .ourTeam{background:#f5f6ff;padding:135px 0}
+.samsungnxt .ourTeam__header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 0 50px 0;padding-left:135px}
+.samsungnxt .ourTeam__navigation{margin-right:120px}
+.samsungnxt .ourTeam__cards .card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;overflow:hidden;width:476px;height:600px;margin-right:47px;background:#fefefe;border-radius:20px;-webkit-box-shadow:0 16px 32px 0 rgba(0,0,0,0.1);box-shadow:0 16px 32px 0 rgba(0,0,0,0.1)}
+.samsungnxt .ourTeam__cards .card .blockquote{font-size:1.5625rem;padding:0 3.125rem;margin-bottom:4.5rem;line-height:1.6}
+.samsungnxt .ourTeam__cards .card .blockquote:after{content:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MSIgaGVpZ2h0PSI1MyIgdmlld0JveD0iMCAwIDYxIDUzIj4gICAgPHBhdGggZmlsbD0iI0VDRUVGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTEuNjQgMEM4LjQxMiAwIDUuNjY1IDEuMTcyIDMuMzk5IDMuNTE2IDEuMTMzIDUuODU5IDAgOC42OTggMCAxMi4wM2MwIDMuMzM0IDEuMTMzIDYuMTcyIDMuMzk4IDguNTE2IDIuMjY2IDIuMzQ0IDUuMDEzIDMuNTE1IDguMjQzIDMuNTE1IDIuOTE2IDAgNC42NzQgMS4xOTggNS4yNzMgMy41OTQuNTk5IDIuMzk2LjMgNS4wNTItLjg5OCA3Ljk2OS0xLjE5OCAyLjkxNy0zLjIwMyA1LjU3My02LjAxNiA3Ljk2OXMtNi4xNDYgMy41OTMtMTAgMy41OTN2NS42MjZjNi45MjcgMCAxMi42OTUtMi43NDggMTcuMzA1LTguMjQzIDQuNjEtNS40OTUgNy42MTctMTEuNTM2IDkuMDIzLTE4LjEyNSAxLjQwNi02LjU4OCAxLjAwMy0xMi42NDMtMS4yMS0xOC4xNjRDMjIuOTAzIDIuNzYxIDE4LjQxIDAgMTEuNjQgMHptMzMuNTk0IDBjLTMuMjI5IDAtNS45NzYgMS4xNzItOC4yNDIgMy41MTYtMi4yNjUgMi4zNDMtMy4zOTggNS4xODItMy4zOTggOC41MTUgMCAzLjMzNCAxLjEzMyA2LjE3MiAzLjM5OCA4LjUxNiAyLjI2NiAyLjM0NCA1LjAxMyAzLjUxNSA4LjI0MiAzLjUxNSAyLjkxNyAwIDQuNjg4IDEuMTk4IDUuMzEzIDMuNTk0cy4zMjUgNS4wNTItLjg5OSA3Ljk2OWMtMS4yMjQgMi45MTctMy4yMjkgNS41NzMtNi4wMTUgNy45NjktMi43ODcgMi4zOTYtNi4xMzMgMy41OTMtMTAuMDQgMy41OTN2NS42MjZjNi45MjggMCAxMi42OTYtMi43NDggMTcuMzA1LTguMjQzIDQuNjEtNS40OTUgNy42MTgtMTEuNTM2IDkuMDI0LTE4LjEyNSAxLjQwNi02LjU4OCAxLjAwMi0xMi42NDMtMS4yMTEtMTguMTY0QzU2LjQ5NyAyLjc2MSA1Mi4wMDUgMCA0NS4yMzQgMHoiLz48L3N2Zz4=");display:block;text-align:right}
+.samsungnxt .ourTeam__cards .card .author{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:200px;color:#fefefe;font-family:"Roboto",sans-serif;background-image:linear-gradient(246deg,#7180e1,#5866c3)}
+.samsungnxt .ourTeam__cards .card .author .image{width:140px;height:140px;background-size:cover;background-repeat:no-repeat;background-position:center center;border-radius:200px;border:solid 5px #fefefe;margin-top:-15%;margin-bottom:2.1875rem}
+.samsungnxt .ourTeam__cards .card .author .name{font-size:18px;font-weight:bold;margin-bottom:6px;text-transform:uppercase}
+.samsungnxt .ourTeam__cards .card .author .title{color:#bac3ff}
 @media print,screen and (min-width:22.5em){.grid-x>.myphone-shrink,.grid-x>.myphone-full,.grid-x>.myphone-1,.grid-x>.myphone-2,.grid-x>.myphone-3,.grid-x>.myphone-4,.grid-x>.myphone-5,.grid-x>.myphone-6,.grid-x>.myphone-7,.grid-x>.myphone-8,.grid-x>.myphone-9,.grid-x>.myphone-10,.grid-x>.myphone-11,.grid-x>.myphone-12{-ms-flex-preferred-size:auto;flex-basis:auto}
 .grid-x>.myphone-auto{-webkit-box-flex:1;-ms-flex:1 1 0;flex:1 1 0;width:auto}
 .grid-x>.myphone-shrink,.grid-x>.myphone-1,.grid-x>.myphone-2,.grid-x>.myphone-3,.grid-x>.myphone-4,.grid-x>.myphone-5,.grid-x>.myphone-6,.grid-x>.myphone-7,.grid-x>.myphone-8,.grid-x>.myphone-9,.grid-x>.myphone-10,.grid-x>.myphone-11,.grid-x>.myphone-12{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto}

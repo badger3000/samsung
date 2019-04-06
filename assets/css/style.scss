@@ -13,8 +13,12 @@
 @import "fonts/primary";
 @import "fonts/secondary";
 
+//vendor 
+@import "vendor/flickity";
+
 //some base styles
 @import "global/base";
 
 //component based styles
 @import "components/feedback";
+@import "components/our-team";
