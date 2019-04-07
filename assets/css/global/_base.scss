@@ -32,6 +32,12 @@ body {
       }
       
     }
+    h5 {
+      font-family: $primary-font;
+      color:$samsungnxt-blue-dark3;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
     .button {
       display: flex;
       justify-content: center;
@@ -55,8 +61,11 @@ body {
       }
       &:hover {
         cursor: pointer;
-        //color: $samsungnxt-blue-light;
         background:darken($samsungnxt-blue-light, 10);
+      }
+      &--full {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
       }
     }
 	}
