@@ -59,8 +59,9 @@
       position: relative;
       width: 286px;
       height: 210px;
-      background-size:contain;
+      background-size:cover;
       background-position: center;
+      background-repeat:no-repeat; 
 			border-radius: 20px;
      
       @include breakpoint(medium down){

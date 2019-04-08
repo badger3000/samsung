@@ -64,7 +64,16 @@ function custom_excerpt_string( $more )
 add_filter( 'excerpt_length', 'custom_excerpt_length', 9 );
 add_filter( 'excerpt_more', 'custom_excerpt_string', 999 );
 
-	
+//quick way applie class to every other 
+function flex_post_class ( $classes ) {
+  global $current_class;
+  $classes[] = $current_class;
+  $current_class = ($current_class == '') ? 'large-order-2' : '';
+  return $classes;
+}
+add_filter ( 'post_class' , 'flex_post_class' );
+// global $current_class;
+// $current_class = '';
 } /* end theme support */
 
 add_action( 'after_setup_theme', 'samsungnxt_theme_support' );

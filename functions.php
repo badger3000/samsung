@@ -25,4 +25,10 @@ require_once(get_template_directory().'/inc/disable-emoji.php');
 
 // Use this as a template for custom post types
 require_once(get_template_directory().'/inc/custom-post-type.php');
+
+// Theme support options
+require_once(get_template_directory().'/inc/admin/theme-settings.php'); 
+
+// More Author fields
+require_once(get_template_directory().'/inc/admin/author-fields.php'); 
  ?>
