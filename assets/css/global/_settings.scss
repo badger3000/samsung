@@ -1,0 +1,94 @@
+//this is a file with all ths site varablies
+
+//grab foundaiton utiliy styles from node_modules
+@import '../../../node_modules/foundation-sites/scss/util/util';
+
+// 1. Global
+// ---------
+
+$global-font-size: 100%;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.5;
+
+//base colors
+$black: #0a0a0a;
+$white: #fefefe;
+
+//theme colors
+$samsungnxt-gray: #373742;
+$samsungnxt-gray2: #838383;
+$samsungnxt-blue-light: #f5f6ff;
+$samsungnxt-blue-mid:#bac3ff;
+$samsungnxt-blue-dark: #5866c3;
+$samsungnxt-blue-dark2:#6b79d9;
+$samsungnxt-blue-dark3:#6977d7;
+
+
+//custom fonts
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'PT Serif', serif;
+
+$body-background: $white;
+$body-font-color: $black;
+$body-font-family:  $secondary-font;
+$body-antialiased: true;
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-position: 1rem;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 0;
+$global-menu-padding: 0.7rem 1rem;
+$global-menu-nested-margin: 1rem;
+$global-text-direction: ltr;
+$global-flexbox: true;
+$global-prototype-breakpoints: false;
+$global-button-cursor: auto;
+$global-color-pick-contrast-tolerance: 0;
+$print-transparent-backgrounds: true;
+
+$print-hrefs: true;
+
+// 2. Breakpoints
+// --------------
+
+$breakpoints: (
+  small: 0,
+  myphone: 360px,
+  medium: 767px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+$print-breakpoint: large;
+$breakpoint-classes: (small myphone medium large xlarge xxlarge);
+
+// 3. The Grid
+// -----------
+
+$grid-row-width: $global-width;
+$grid-column-count: 12;
+$grid-column-gutter: (
+  small: 20px,
+  medium: 30px,
+);
+$grid-column-align-edge: true;
+$grid-column-alias: 'columns';
+$block-grid-max: 8;
+
+
+// 56. Xy Grid
+// -----------
+
+$xy-grid: true;
+$grid-container: $global-width;
+$grid-columns: 12;
+$grid-margin-gutters: (
+  small: 20px,
+  medium: 30px
+);
+$grid-padding-gutters: $grid-margin-gutters;
+$grid-container-padding: $grid-padding-gutters;
+$grid-container-max: $global-width;
+$xy-block-grid-max: 8;
+
