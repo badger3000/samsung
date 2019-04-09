@@ -45,9 +45,9 @@
 
 				.blockquote {
 					font-size: rem-calc(18);
-					padding: 0 rem-calc(50);
-					margin-bottom: rem-calc(72);
+					padding: rem-calc(50) rem-calc(50) 0 rem-calc(50);
           line-height: 1.7;
+          height: rem-calc(323);
           &:after {
             content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MSIgaGVpZ2h0PSI1MyIgdmlld0JveD0iMCAwIDYxIDUzIj4gICAgPHBhdGggZmlsbD0iI0VDRUVGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTEuNjQgMEM4LjQxMiAwIDUuNjY1IDEuMTcyIDMuMzk5IDMuNTE2IDEuMTMzIDUuODU5IDAgOC42OTggMCAxMi4wM2MwIDMuMzM0IDEuMTMzIDYuMTcyIDMuMzk4IDguNTE2IDIuMjY2IDIuMzQ0IDUuMDEzIDMuNTE1IDguMjQzIDMuNTE1IDIuOTE2IDAgNC42NzQgMS4xOTggNS4yNzMgMy41OTQuNTk5IDIuMzk2LjMgNS4wNTItLjg5OCA3Ljk2OS0xLjE5OCAyLjkxNy0zLjIwMyA1LjU3My02LjAxNiA3Ljk2OXMtNi4xNDYgMy41OTMtMTAgMy41OTN2NS42MjZjNi45MjcgMCAxMi42OTUtMi43NDggMTcuMzA1LTguMjQzIDQuNjEtNS40OTUgNy42MTctMTEuNTM2IDkuMDIzLTE4LjEyNSAxLjQwNi02LjU4OCAxLjAwMy0xMi42NDMtMS4yMS0xOC4xNjRDMjIuOTAzIDIuNzYxIDE4LjQxIDAgMTEuNjQgMHptMzMuNTk0IDBjLTMuMjI5IDAtNS45NzYgMS4xNzItOC4yNDIgMy41MTYtMi4yNjUgMi4zNDMtMy4zOTggNS4xODItMy4zOTggOC41MTUgMCAzLjMzNCAxLjEzMyA2LjE3MiAzLjM5OCA4LjUxNiAyLjI2NiAyLjM0NCA1LjAxMyAzLjUxNSA4LjI0MiAzLjUxNSAyLjkxNyAwIDQuNjg4IDEuMTk4IDUuMzEzIDMuNTk0cy4zMjUgNS4wNTItLjg5OSA3Ljk2OWMtMS4yMjQgMi45MTctMy4yMjkgNS41NzMtNi4wMTUgNy45NjktMi43ODcgMi4zOTYtNi4xMzMgMy41OTMtMTAuMDQgMy41OTN2NS42MjZjNi45MjggMCAxMi42OTYtMi43NDggMTcuMzA1LTguMjQzIDQuNjEtNS40OTUgNy42MTgtMTEuNTM2IDkuMDI0LTE4LjEyNSAxLjQwNi02LjU4OCAxLjAwMi0xMi42NDMtMS4yMTEtMTguMTY0QzU2LjQ5NyAyLjc2MSA1Mi4wMDUgMCA0NS4yMzQgMHoiLz48L3N2Zz4=");
             display:block;
@@ -56,6 +56,7 @@
           @include breakpoint(large){
             font-size: rem-calc(25);
             line-height: 1.6;
+            height: rem-calc(396);
           }
 				}
 
@@ -63,10 +64,15 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-					height: 200px;
+					height: 204px;
           color: $white;
           font-family: $primary-font;
-					background-image: linear-gradient(246deg, #7180e1, #5866c3);
+          background-image: linear-gradient(246deg, #7180e1, #5866c3);
+          padding-bottom: rem-calc(46); 
+          @include breakpoint(large){
+            padding-bottom: rem-calc(48); 
+          }
+         
 
 					.image {
 						width: 140px;

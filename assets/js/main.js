@@ -18,9 +18,6 @@ var themeJS = {
     var flkty = new Flickity(elem, {
       // options
       cellAlign: 'left',
-      //wrapAround: true,
-      //groupCells: '78%',
-      //percentPosition: false,
       setGallerySize: false,
       prevNextButtons: false,
       pageDots: false,
@@ -44,7 +41,7 @@ var themeJS = {
       viewPort.style.marginLeft = getValue.left + 'px';
     });
   },
-  onHover: function onHover() {//want to add a parallax hover state to thumbnails/dots in header
+  onHover: function onHover() {//want to add a parallax hover state to thumbnails/dots in the first 3 posts
   },
   scroll: function scroll() {
     //init the animation libary, use data-aos on element
