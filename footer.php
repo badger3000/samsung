@@ -13,10 +13,12 @@ $query_bottom_posts = new WP_Query($args);
         <?php
         // The Loop
         if ($query_bottom_posts->have_posts()) {
-
+          //trying to get a "stagger effect" for each card to animate in, but looks like I would need to build something custom
+          $number = 60;
           while ($query_bottom_posts->have_posts()) {
+
             $query_bottom_posts->the_post(); ?>
-            <div class="client-blog__item">
+            <div data-aos="fade-up" data-aos-delay="<?php echo $number += 60?>" data-aos-offset="<?php echo $number += 60?>" data-aos-easing="ease-in" class="client-blog__item">
               <!-- check to see if a thumbnail is set-->
               <?php if (has_post_thumbnail($post->ID)) : ?>
                 <!-- If there is, get the source URL for the thumbnail size-->
