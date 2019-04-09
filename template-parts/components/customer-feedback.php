@@ -9,8 +9,8 @@ $query_top_posts = new WP_Query($args);
 <section class="feedback">
   <div class="grid-container">
     <header class="feedback__header">
-      <h1><?php echo bloginfo('name'); ?></h1>
-      <div class="sub-header"><?php echo bloginfo('description'); ?></div>
+      <h1 data-aos="zoom-in"><?php echo bloginfo('name'); ?></h1>
+      <div class="sub-header" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400"><?php echo bloginfo('description'); ?></div>
     </header>
     <?php
     // The Loop
@@ -21,10 +21,10 @@ $query_top_posts = new WP_Query($args);
       while ($query_top_posts->have_posts()) :
         //for ever other post, set some values
         if (($postcount % 2) == 0) {
-          $animate_val1 = 'fade-left';
+          $animate_val1 = 'zoom-in-right';
           $animate_val2 = 'fade-right';
         } else {
-          $animate_val1 = 'fade-right';
+          $animate_val1 = 'zoom-in-left';
           $animate_val2 = 'fade-left';
         }
         //get the post and render it
@@ -32,7 +32,7 @@ $query_top_posts = new WP_Query($args);
         ?>
         <article class="feedback__quote">
           <div class="grid-x grid-margin-x">
-            <div data-aos="<?php echo $animate_val1; ?>" <?php post_class('cell small-12 large-6'); ?>>
+            <div data-aos="<?php echo $animate_val1; ?>" data-aos-delay="400" <?php post_class('cell small-12 large-6'); ?>>
               <!-- check to see if a thumbnail is set-->
               <?php if (has_post_thumbnail($post->ID)) : ?>
                 <!-- If there is, get the source URL for the thumbnail size-->
@@ -49,7 +49,7 @@ $query_top_posts = new WP_Query($args);
                   </svg>
                 </div>
               </div>
-              <div data-aos="<?php echo $animate_val2; ?>" class="cell small-12 large-6">
+              <div data-aos="<?php echo $animate_val2; ?>" data-aos-delay="600" class="cell small-12 large-6">
                 <div class="text"><?php the_excerpt(); ?></div>
                 <span class="name"><?php the_author_meta('display_name', $user_id); ?></span>
                 <span class="title"><?php the_author_meta('title', $user_id); ?>, <?php the_author_meta('company', $user_id); ?></span>
