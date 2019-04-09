@@ -64,7 +64,7 @@ function custom_excerpt_string( $more )
 add_filter( 'excerpt_length', 'custom_excerpt_length', 9 );
 add_filter( 'excerpt_more', 'custom_excerpt_string', 999 );
 
-//quick way applie class to every other 
+//quick way applie a class to every other post in a loop
 function flex_post_class ( $classes ) {
   global $current_class;
   $classes[] = $current_class;

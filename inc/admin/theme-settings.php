@@ -2,15 +2,15 @@
 /**
  * Theme Settings
  */
-function wd_theme_settings_page()
+function samsungnxt_theme_settings_page()
 {
    ?>
 	<div class="wrap">
 		<h1><?php echo esc_html(get_admin_page_title()); ?></h1>
 		<form method="post" action="<?php echo esc_url(admin_url('options.php')); ?>">
 			<?php
-				settings_fields("wd_theme_options");
-				do_settings_sections("wd_theme_options");
+				settings_fields("samsungnxt_theme_options");
+				do_settings_sections("samsungnxt_theme_options");
 				submit_button();
 			?>
 		</form>
@@ -19,13 +19,13 @@ function wd_theme_settings_page()
 }
 
 
-function wd_add_theme_menu_item()
+function samsungnxt_add_theme_menu_item()
 {
-	add_menu_page('Theme Settings', 'Theme Settings', 'manage_options', 'wd_theme_options', 'wd_theme_settings_page', null, 99);
+	add_menu_page('Theme Settings', 'Theme Settings', 'manage_options', 'samsungnxt_theme_options', 'samsungnxt_theme_settings_page', null, 99);
 }
-add_action('admin_menu', 'wd_add_theme_menu_item');
+add_action('admin_menu', 'samsungnxt_add_theme_menu_item');
 
-function wd_field_text($args)
+function samsungnxt_field_text($args)
 {
 	extract($args);
 
@@ -41,7 +41,7 @@ function wd_field_text($args)
 	}
 }
 
-function wd_display_theme_panel_fields()
+function samsungnxt_display_theme_panel_fields()
 {
 	$text_args = array(
 		'type' => 'string',
@@ -55,25 +55,48 @@ function wd_display_theme_panel_fields()
 		'default' => NULL
   );
   add_settings_section(
-		'wd_theme_section_quote',
+		'samsungnxt_theme_section_quote',
 		'Homepage Quote',
 		null,
-		'wd_theme_options'
+		'samsungnxt_theme_options'
 	);
-
-	add_settings_field(
-		'wd_field_quote_url',
-		'Quote',
-		'wd_field_text',
-		'wd_theme_options',
-		'wd_theme_section_quote',
+  add_settings_field(
+		'samsungnxt_image_url',
+		'Image',
+		'samsungnxt_field_text',
+		'samsungnxt_theme_options',
+		'samsungnxt_theme_section_quote',
 		array(
-			'id' => 'wd_field_twitter_url',
+			'id' => 'samsungnxt_image_url',
 			'class' => 'regular-text'
 		)
 	);
-	register_setting('wd_theme_options', 'wd_field_twitter_url', $url_args);
+  register_setting('samsungnxt_theme_options', 'samsungnxt_image_url', $url_args);
+	add_settings_field(
+		'samsungnxt_field_quote_txt',
+		'Quote',
+		'samsungnxt_field_text',
+		'samsungnxt_theme_options',
+		'samsungnxt_theme_section_quote',
+		array(
+			'id' => 'samsungnxt_homepage_quote',
+			'class' => 'regular-text'
+		)
+	);
+  register_setting('samsungnxt_theme_options', 'samsungnxt_homepage_quote', $text_args);
+  add_settings_field(
+		'samsungnxt_field_author_txt',
+		'Author',
+		'samsungnxt_field_text',
+		'samsungnxt_theme_options',
+		'samsungnxt_theme_section_quote',
+		array(
+			'id' => 'samsungnxt_field_author',
+			'class' => 'regular-text'
+		)
+	);
+	register_setting('samsungnxt_theme_options', 'samsungnxt_field_author', $text_args);
   
 }
-add_action('admin_init', 'wd_display_theme_panel_fields');
+add_action('admin_init', 'samsungnxt_display_theme_panel_fields');
 
