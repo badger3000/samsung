@@ -50,6 +50,10 @@ $query_bottom_posts = new WP_Query($args);
   </section>
   <?php wp_footer(); ?>
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

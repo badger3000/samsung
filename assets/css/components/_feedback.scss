@@ -48,13 +48,22 @@
 
 			//I dont like targeting framework classes, but this is a quick hit to right align image
 			.large-order-2 {
+        //example of changed svg dot pattern with classname, would make this contrable by WP in porduction
+        svg {
+          stroke: $samsungnxt-blue-aqua;
+        }
         @include breakpoint(large){
           display: flex;
 				  justify-content: flex-end;
         }
 			}
-		}
-
+    }
+    //example of changed svg dot pattern with classname, would make this contrable by WP in porduction
+    .post-29 {
+      svg {
+        stroke: $samsungnxt-blue-aqua-light;
+      }
+    }
 		&__image {
       position: relative;
       width: 286px;
@@ -73,21 +82,18 @@
       }
 		
 
-			&::after {
+			svg {
 				position: absolute;
 				z-index: -1;
 				top: 10%;
 				right: -10%;
-				content: '';
         display: block;
         width: 286px;
         height: 210px;
-				//background: rgba(150, 150, 150, 0.6);
-				background-image: radial-gradient(circle, black 50%, transparent 33%);
-        background-size: 10px 10px;
+				stroke: $samsungnxt-blue-orange;
         @include breakpoint(large){
-          width: 410px;
-          height: 300px;
+          width: 412px;
+          height: 293px;
         }
 			}
 		}
