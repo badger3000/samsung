@@ -4,7 +4,7 @@
 // let's create the function for the custom type
 function custom_post_example() { 
 	// creating (registering) the custom type 
-	register_post_type( 'custom_type', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
+	register_post_type( 'cards', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
 	 	// let's now add all the options for this post type
 		array('labels' => array(
 			'name' => __('Cards', 'samsungnxt'), /* This is the Title of the Group */
@@ -21,7 +21,7 @@ function custom_post_example() {
 			'not_found_in_trash' => __('Nothing found in Trash', 'samsungnxt'), /* This displays if there is nothing in the trash */
 			'parent_item_colon' => ''
 			), /* end of arrays */
-			'description' => __( 'Post related to Cards', 'samsungnxt' ), /* Custom Type Description */
+			'description' => __( 'Our team members', 'samsungnxt' ), /* Custom Type Description */
 			'public' => true,
 			'publicly_queryable' => true,
 			'exclude_from_search' => false,
@@ -29,7 +29,7 @@ function custom_post_example() {
 			'query_var' => true,
 			'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ 
 			'menu_icon' => 'dashicons-format-gallery', /* the icon for the custom post type menu. uses built-in dashicons (CSS class name) */
-			'rewrite'	=> array( 'slug' => 'custom_type', 'with_front' => false ), /* you can specify its url slug */
+			'rewrite'	=> array( 'slug' => 'cards', 'with_front' => false ), /* you can specify its url slug */
 			'has_archive' => 'insurance_', /* you can rename the slug here */
 			'capability_type' => 'post',
 			'hierarchical' => false,
@@ -39,9 +39,9 @@ function custom_post_example() {
 	); /* end of register post type */
 	
 	/* this adds your post categories to your custom post type */
-	register_taxonomy_for_object_type('category', 'custom_type');
+	//register_taxonomy_for_object_type('category', 'custom_type');
 	/* this adds your post tags to your custom post type */
-	register_taxonomy_for_object_type('post_tag', 'custom_type');
+	//register_taxonomy_for_object_type('post_tag', 'custom_type');
 	
 } 
 
@@ -55,7 +55,7 @@ function custom_post_example() {
 	
 	// now let's add custom categories (these act like categories)
     register_taxonomy( 'custom_cat', 
-    	array('custom_type'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+    	array('cards'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
     	array('hierarchical' => true,     /* if this is true, it acts like categories */             
     		'labels' => array(
     			'name' => __( 'Custom Categories', 'samsungnxt' ), /* name of the custom taxonomy */
@@ -78,7 +78,7 @@ function custom_post_example() {
     
 	// now let's add custom tags (these act like categories)
     register_taxonomy( 'custom_tag', 
-    	array('custom_type'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+    	array('cards'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
     	array('hierarchical' => false,    /* if this is false, it acts like tags */                
     		'labels' => array(
     			'name' => __( 'Custom Tags', 'samsungnxt' ), /* name of the custom taxonomy */

@@ -7,7 +7,7 @@ function samsungnxt_theme_support() {
 	add_theme_support( 'post-thumbnails' );
 	
 	// Default thumbnail size
-	set_post_thumbnail_size(125, 125, true);
+	set_post_thumbnail_size(140, 140, true);
 
 	// Add RSS Support
 	add_theme_support( 'automatic-feed-links' );
@@ -48,8 +48,32 @@ function samsungnxt_theme_support() {
 	); 
 	
 	// Set the maximum allowed width for any content in the theme, like oEmbeds and images added to posts.
-	$GLOBALS['content_width'] = apply_filters( 'samsungnxt_theme_support', 1200 );	
-	
+  $GLOBALS['content_width'] = apply_filters( 'samsungnxt_theme_support', 1200 );	
+  
+/**
+ * custom excerpt length
+ */
+function custom_excerpt_length( $length )
+{
+	return 20;
+}
+function custom_excerpt_string( $more )
+{
+	return ' ...';
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 9 );
+add_filter( 'excerpt_more', 'custom_excerpt_string', 999 );
+
+//quick way applie a class to every other post in a loop
+function flex_post_class ( $classes ) {
+  global $current_class;
+  $classes[] = $current_class;
+  $current_class = ($current_class == '') ? 'large-order-2' : '';
+  return $classes;
+}
+add_filter ( 'post_class' , 'flex_post_class' );
+// global $current_class;
+// $current_class = '';
 } /* end theme support */
 
 add_action( 'after_setup_theme', 'samsungnxt_theme_support' );
