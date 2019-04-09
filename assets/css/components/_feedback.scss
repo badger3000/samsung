@@ -2,18 +2,20 @@
 .samsungnxt {
 	.feedback {
 		&__header {
-      margin-bottom: rem-calc(79);
-      @include breakpoint(large){
-        margin-bottom: rem-calc(123);
-      }
-		
+			margin-bottom: rem-calc(79);
+
+			@include breakpoint(large) {
+				margin-bottom: rem-calc(123);
+			}
+
 			.sub-header {
 				font-size: rem-calc(18);
-        color: $samsungnxt-gray;
-        @include breakpoint(large){
-          font-size: rem-calc(23);
-        }
-      
+				color: $samsungnxt-gray;
+
+				@include breakpoint(large) {
+					font-size: rem-calc(23);
+				}
+
 			}
 		}
 
@@ -23,12 +25,13 @@
 			.text {
 				margin-bottom: rem-calc(34);
 				font-size: rem-calc(18);
-        line-height: 1.72;
-        @include breakpoint(large){
-          margin-bottom: rem-calc(63);
-          font-size: rem-calc(25);
-          line-height: 1.67;
-        }
+				line-height: 1.72;
+
+				@include breakpoint(large) {
+					margin-bottom: rem-calc(63);
+					font-size: rem-calc(25);
+					line-height: 1.67;
+				}
 			}
 
 			span {
@@ -46,55 +49,61 @@
 				}
 			}
 
-			//I dont like targeting framework classes, but this is a quick hit to right align image
+			//I dont like targeting framework classes, but this is a quick hit to right align image ever other post
 			.large-order-2 {
-        //example of changed svg dot pattern with classname, would make this contrable by WP in porduction
-        svg {
-          stroke: $samsungnxt-blue-aqua;
-        }
-        @include breakpoint(large){
-          display: flex;
-				  justify-content: flex-end;
-        }
-			}
-    }
-    //example of changed svg dot pattern with classname, would make this contrable by WP in porduction
-    .post-29 {
-      svg {
-        stroke: $samsungnxt-blue-aqua-light;
-      }
-    }
-		&__image {
-      position: relative;
-      width: 286px;
-      height: 210px;
-      background-size:cover;
-      background-position: center;
-      background-repeat:no-repeat; 
-			border-radius: 20px;
-     
-      @include breakpoint(medium down){
-        margin-bottom: 37px;
-      }
-      @include breakpoint(large){
-        width: 410px;
-        height: 300px;
-      }
-		
 
+				//example of changed svg dot pattern with classname, would make this contrable by WP in porduction
+				svg {
+					stroke: $samsungnxt-blue-aqua;
+				}
+
+				@include breakpoint(large) {
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+		}
+
+		//example of changed svg dot pattern with classname, would make this contrable by WP in porduction
+		.post-29 {
+			svg {
+				stroke: $samsungnxt-blue-aqua-light;
+			}
+		}
+
+		&__image {
+			position: relative;
+			width: 286px;
+			height: 210px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			border-radius: 20px;
+
+			@include breakpoint(medium down) {
+				margin-bottom: 37px;
+			}
+
+			@include breakpoint(large) {
+				width: 410px;
+				height: 300px;
+			}
+
+      //default settings for the svg dots
 			svg {
 				position: absolute;
 				z-index: -1;
 				top: 10%;
 				right: -10%;
-        display: block;
-        width: 286px;
-        height: 210px;
+				display: block;
+				width: 286px;
+				height: 210px;
 				stroke: $samsungnxt-blue-orange;
-        @include breakpoint(large){
-          width: 412px;
-          height: 293px;
-        }
+
+				@include breakpoint(large) {
+					width: 412px;
+					height: 293px;
+				}
 			}
 		}
 
@@ -102,12 +111,13 @@
 			display: flex;
 			justify-content: center;
 			margin-bottom: rem-calc(92);
-    }
-    //overide the grid container for mobile, to give it extra padding
-    .grid-container {
-      @include breakpoint(medium down){
-        padding: 0 30px;
-      }
-    }
+		}
+
+		//overide the grid container for mobile, to give it extra padding
+		.grid-container {
+			@include breakpoint(medium down) {
+				padding: 0 30px;
+			}
+		}
 	}
 }

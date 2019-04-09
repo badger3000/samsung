@@ -4,7 +4,6 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package SAMSUNGNXT
  */
 
  // Uncomment to force error reporting (thwart White Screen of Death)

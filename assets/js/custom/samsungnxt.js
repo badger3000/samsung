@@ -3,6 +3,7 @@
 var themeJS = {
 	init: function () {
 		this.slider();
+    this.scroll();
 	},
 	slider: function () {
 		var elem = document.querySelector('.ourTeam__cards');
@@ -15,8 +16,8 @@ var themeJS = {
 			prevNextButtons: false,
 			pageDots: false,
 			contain: false
-    });
-    
+		});
+
 		// previous
 		var previousButton = document.querySelector('.flickity-button--previous');
 		previousButton.addEventListener('click', function () {
@@ -27,6 +28,10 @@ var themeJS = {
 		nextButton.addEventListener('click', function () {
 			flkty.next();
 		});
+	},
+	scroll: function () {
+    //init the animation libary, use data-aos on element
+		AOS.init();
 	}
 }
 

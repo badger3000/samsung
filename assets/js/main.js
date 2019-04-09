@@ -4,6 +4,7 @@
 var themeJS = {
   init: function init() {
     this.slider();
+    this.scroll();
   },
   slider: function slider() {
     var elem = document.querySelector('.ourTeam__cards'); //init carousel
@@ -26,6 +27,10 @@ var themeJS = {
     nextButton.addEventListener('click', function () {
       flkty.next();
     });
+  },
+  scroll: function scroll() {
+    //init the animation libary, use data-aos on element
+    AOS.init();
   } //init js for the theme
 
 };

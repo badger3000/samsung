@@ -4,11 +4,16 @@ function site_scripts() {
 
      // Load all vendor scripts in the header, as to ensure accesses for custom scripts
      wp_enqueue_script( 'vendor-js', get_template_directory_uri() . '/assets/js/vendor.min.js', array(), filemtime(get_template_directory() . '/assets/js'), false );
+     // Load all vendor scripts in the header, as to ensure accesses for custom scripts
+     wp_enqueue_script( 'AOS-js', 'https://unpkg.com/aos@next/dist/aos.js', array(), filemtime(get_template_directory() . '/assets/js'), true );
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/js/main.min.js', array(), filemtime(get_template_directory() . '/assets/js'), true );
    
     // Register main stylesheet
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.min.css', array(), filemtime(get_template_directory() . '/assets/css'), 'all' );
+     
+    // Register main stylesheet
+    wp_enqueue_style( 'AOS-css', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array() );
 
     // Comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {

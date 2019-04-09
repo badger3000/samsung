@@ -21,7 +21,7 @@ function custom_post_example() {
 			'not_found_in_trash' => __('Nothing found in Trash', 'samsungnxt'), /* This displays if there is nothing in the trash */
 			'parent_item_colon' => ''
 			), /* end of arrays */
-			'description' => __( 'Post related to Cards', 'samsungnxt' ), /* Custom Type Description */
+			'description' => __( 'Our team members', 'samsungnxt' ), /* Custom Type Description */
 			'public' => true,
 			'publicly_queryable' => true,
 			'exclude_from_search' => false,
