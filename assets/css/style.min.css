@@ -255,14 +255,14 @@ body.samsungnxt .button--full{width:100%;border-radius:0 0 10px 10px}
 .samsungnxt .feedback__quote .large-order-2 svg{stroke:#a7e8e1}
 .samsungnxt .feedback .post-29 svg{stroke:#b2d6e2}
 .samsungnxt .feedback__image{position:relative;width:286px;height:210px;background-size:cover;background-position:center;background-repeat:no-repeat;border-radius:20px}
-.samsungnxt .feedback__image svg{position:absolute;z-index:-1;top:10%;right:-10%;display:block;width:286px;height:210px;stroke:#eab275}
+.samsungnxt .feedback__image svg{position:absolute;z-index:-1;top:10%;right:-10%;display:block;width:286px;height:216px;stroke:#eab275}
 .samsungnxt .feedback__button{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-bottom:5.75rem}
 .samsungnxt .ourTeam{background:#f5f6ff;padding:38px 0 51px 30px;margin-bottom:30px}
 .samsungnxt .ourTeam__header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 0 50px 0}
 .samsungnxt .ourTeam__cards .card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;overflow:hidden;width:376px;height:527px;margin-right:47px;background:#fefefe;border-radius:20px;-webkit-box-shadow:0 16px 32px 0 rgba(0,0,0,0.1);box-shadow:0 16px 32px 0 rgba(0,0,0,0.1)}
-.samsungnxt .ourTeam__cards .card .blockquote{font-size:1.125rem;padding:0 3.125rem;margin-bottom:4.5rem;line-height:1.7}
+.samsungnxt .ourTeam__cards .card .blockquote{font-size:1.125rem;padding:3.125rem 3.125rem 0 3.125rem;line-height:1.7;height:20.1875rem}
 .samsungnxt .ourTeam__cards .card .blockquote:after{content:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MSIgaGVpZ2h0PSI1MyIgdmlld0JveD0iMCAwIDYxIDUzIj4gICAgPHBhdGggZmlsbD0iI0VDRUVGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTEuNjQgMEM4LjQxMiAwIDUuNjY1IDEuMTcyIDMuMzk5IDMuNTE2IDEuMTMzIDUuODU5IDAgOC42OTggMCAxMi4wM2MwIDMuMzM0IDEuMTMzIDYuMTcyIDMuMzk4IDguNTE2IDIuMjY2IDIuMzQ0IDUuMDEzIDMuNTE1IDguMjQzIDMuNTE1IDIuOTE2IDAgNC42NzQgMS4xOTggNS4yNzMgMy41OTQuNTk5IDIuMzk2LjMgNS4wNTItLjg5OCA3Ljk2OS0xLjE5OCAyLjkxNy0zLjIwMyA1LjU3My02LjAxNiA3Ljk2OXMtNi4xNDYgMy41OTMtMTAgMy41OTN2NS42MjZjNi45MjcgMCAxMi42OTUtMi43NDggMTcuMzA1LTguMjQzIDQuNjEtNS40OTUgNy42MTctMTEuNTM2IDkuMDIzLTE4LjEyNSAxLjQwNi02LjU4OCAxLjAwMy0xMi42NDMtMS4yMS0xOC4xNjRDMjIuOTAzIDIuNzYxIDE4LjQxIDAgMTEuNjQgMHptMzMuNTk0IDBjLTMuMjI5IDAtNS45NzYgMS4xNzItOC4yNDIgMy41MTYtMi4yNjUgMi4zNDMtMy4zOTggNS4xODItMy4zOTggOC41MTUgMCAzLjMzNCAxLjEzMyA2LjE3MiAzLjM5OCA4LjUxNiAyLjI2NiAyLjM0NCA1LjAxMyAzLjUxNSA4LjI0MiAzLjUxNSAyLjkxNyAwIDQuNjg4IDEuMTk4IDUuMzEzIDMuNTk0cy4zMjUgNS4wNTItLjg5OSA3Ljk2OWMtMS4yMjQgMi45MTctMy4yMjkgNS41NzMtNi4wMTUgNy45NjktMi43ODcgMi4zOTYtNi4xMzMgMy41OTMtMTAuMDQgMy41OTN2NS42MjZjNi45MjggMCAxMi42OTYtMi43NDggMTcuMzA1LTguMjQzIDQuNjEtNS40OTUgNy42MTgtMTEuNTM2IDkuMDI0LTE4LjEyNSAxLjQwNi02LjU4OCAxLjAwMi0xMi42NDMtMS4yMTEtMTguMTY0QzU2LjQ5NyAyLjc2MSA1Mi4wMDUgMCA0NS4yMzQgMHoiLz48L3N2Zz4=");display:block;text-align:right}
-.samsungnxt .ourTeam__cards .card .author{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:200px;color:#fefefe;font-family:"Roboto",sans-serif;background-image:linear-gradient(246deg,#7180e1,#5866c3)}
+.samsungnxt .ourTeam__cards .card .author{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:204px;color:#fefefe;font-family:"Roboto",sans-serif;background-image:linear-gradient(246deg,#7180e1,#5866c3);padding-bottom:2.875rem}
 .samsungnxt .ourTeam__cards .card .author .image{width:140px;height:140px;background-size:cover;background-repeat:no-repeat;background-position:center center;border-radius:200px;border:solid 5px #fefefe;margin-top:-15%;margin-bottom:1.875rem}
 .samsungnxt .ourTeam__cards .card .author .name{font-size:18px;font-weight:bold;margin-bottom:6px;text-transform:uppercase}
 .samsungnxt .ourTeam__cards .card .author .title{font-size:20px;color:#bac3ff}
@@ -992,7 +992,6 @@ body.samsungnxt .button--full{width:100%;border-radius:0 0 10px 10px}
 .large-flex-dir-row-reverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 .large-flex-dir-column{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .large-flex-dir-column-reverse{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
-.flickity-viewport{margin-left:135px}
 body.samsungnxt{margin:11rem 0 0 0}
 body.samsungnxt h1{margin:0 0 3.125rem 0;font-size:5.625rem}
 body.samsungnxt h2{font-size:2rem}
@@ -1003,10 +1002,10 @@ body.samsungnxt h2{font-size:2rem}
 .samsungnxt .feedback__image{width:410px;height:300px}
 .samsungnxt .feedback__image svg{width:412px;height:293px}
 .samsungnxt .ourTeam{padding:135px 0;margin-bottom:100px}
-.samsungnxt .ourTeam__header{padding-left:135px}
-.samsungnxt .ourTeam__navigation{margin-right:120px}
+.samsungnxt .ourTeam__header{width:1200px;margin-right:auto;margin-left:auto}
 .samsungnxt .ourTeam__cards .card{width:476px;height:600px}
-.samsungnxt .ourTeam__cards .card .blockquote{font-size:1.5625rem;line-height:1.6}
+.samsungnxt .ourTeam__cards .card .blockquote{font-size:1.5625rem;line-height:1.6;height:24.75rem}
+.samsungnxt .ourTeam__cards .card .author{padding-bottom:3rem}
 .samsungnxt .ourTeam__cards .card .author .image{margin-bottom:2.1875rem}
 .samsungnxt .customer{margin-bottom:125px}
 .samsungnxt .customer .grid-container{margin-left:auto;margin-right:auto}
