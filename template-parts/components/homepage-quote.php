@@ -5,7 +5,7 @@ $quote_text   = get_option('samsungnxt_homepage_quote');
 $quote_author  = get_option('samsungnxt_field_author');
 
 ?>
-<section data-aos="zoom-in-up" class="customer customer__quote">
+<section data-aos="zoom-in-up" data-aos-offset="300" class="customer customer__quote">
   <div class="grid-container">
     <div class="flex-container flex-dir-column large-flex-dir-row">
       <div class="flex-child-auto">
