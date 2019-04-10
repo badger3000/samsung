@@ -22,6 +22,11 @@ Install dependances:
 ```bash
 npm install
 ```
+To run the build and start browsersync
+
+```bash
+npm start
+```
 
 To optimize images
 
@@ -44,9 +49,9 @@ gulp stylesRTL
 There are many ways to control WordPress content and I choose a few diffrent options for this theme
 - __Title & Subheader__: This is coming from Settings > General and is displaying the 'Site Title' and Tagline  
 - __Masthead/Footer__: I made two categories "top posts/bottom posts" and assigned these to posts to determine where they show up
-- __Cards__: This is using a custom post type "Cards" and is viewable in the admin as a seprate menu item. The title of this section is coming from the custom post type's description
+- __Cards__: This is using a custom post type "Cards" and is viewable in the admin as a seprate menu item. The title (displayed on the site) of this section is coming from the custom post type's description
 - __Quote Box__: This was added as a "Theme setting" and can be accsesed in the in the admin's left menu (towards the bottom)
-- __Authors__: I added some "Extra profile information" towards this bottom, on the author screen. This has fields for "company & title" and is beeing displayed/used in the footer post, under the image 
+- __Authors__: I added some "Extra profile information" towards this bottom, on the author screen. This has fields for "company & title" and is being displayed/used in the footer post, under the image 
 
 
 ## Frameworks used
